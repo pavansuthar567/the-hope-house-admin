@@ -221,7 +221,7 @@ const BreadcrumbItem = React.forwardRef<HTMLSpanElement, any>(
     },
     ref
   ) => {
-    const ariaCurrent = iscurrent ? "page" : null;
+    const ariaCurrent = iscurrent ? "page" : undefined;
     const dataState = iscurrent ? "active" : null;
     const dataDisabled = disabled && !iscurrent ? "true" : null;
 
