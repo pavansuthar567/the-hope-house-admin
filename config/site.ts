@@ -1,20 +1,17 @@
-
-
-
 export const siteConfig = {
-  name: "DashTail Next js Admin Template",
+  name: "The Hope House",
   description: null,
   theme: "violet",
-  layout: "vertical",
+  layout: "semi-box",
   // semi-box, horizontal, vertical
   hideSideBar: false,
   sidebarType: "module",
   // popover, classic, module
   sidebarColor: null,
-  navbarType: "sticky",
+  navbarType: "floating",
   // sticky, floating, static
   footerType: "static",
   // sticky,  static, hidden
   sidebarBg: "none",
-  radius: 0.5,
+  radius: 1,
 };

@@ -27,7 +27,7 @@ import {
   closestCorners,
 } from "@dnd-kit/core";
 import { SortableContext, arrayMove } from "@dnd-kit/sortable";
-import { createPortal } from "react-dom";
+// import { createPortal } from "react-dom";
 import { editBoardAction, swapBoardAction } from "@/action/project-action";
 import { type Board as BoardType } from "@/app/api/boards/data";
 import { type Task as TaskType } from "@/app/api/tasks/data";
@@ -50,12 +50,22 @@ const TaskBoard = ({ boards, tasks, subTasks, comments }: TaskBoardProps) => {
   // update task
   const [open3, setOpen3] = useState<boolean>(false);
   // for board
-  const [selectedBoardId, setSelectedBoardId] = React.useState<BoardType["id"] | undefined>(undefined);
-  const [selectedBoard, setSelectedBoard] = React.useState<BoardType | undefined>(undefined);
+  const [selectedBoardId, setSelectedBoardId] = React.useState<
+    BoardType["id"] | undefined
+  >(undefined);
+  const [selectedBoard, setSelectedBoard] = React.useState<
+    BoardType | undefined
+  >(undefined);
   // for task
-  const [selectedTaskId, setSelectedTaskId] = React.useState<TaskType["id"] | undefined>(undefined);
-  const [selectedTask, setSelectedTask] = React.useState<TaskType | undefined>(undefined);
-  const [selectedBoardForTask, setSelectedBoardForTask] = React.useState<BoardType["id"] | undefined>(undefined);
+  const [selectedTaskId, setSelectedTaskId] = React.useState<
+    TaskType["id"] | undefined
+  >(undefined);
+  const [selectedTask, setSelectedTask] = React.useState<TaskType | undefined>(
+    undefined
+  );
+  const [selectedBoardForTask, setSelectedBoardForTask] = React.useState<
+    BoardType["id"] | undefined
+  >(undefined);
 
   // handler task view
   const taskViewHandler = (value: string) => {
@@ -181,8 +191,8 @@ const TaskBoard = ({ boards, tasks, subTasks, comments }: TaskBoardProps) => {
                 onDragEnd={handleDragEnd}
                 collisionDetection={closestCorners}
                 onDragOver={onDragOver}
-              // onDragOver={handleDragOver}
-              // onDragCancel={handleDragCancel}
+                // onDragOver={handleDragOver}
+                // onDragCancel={handleDragCancel}
               >
                 <div className="overflow-x-auto">
                   <div className="flex flex-nowrap gap-6">
