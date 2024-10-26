@@ -102,22 +102,22 @@ const ClassicSidebar = ({ trans }: { trans: string }) => {
             <li key={`menu_key_${i}`}>
               {/* single menu  */}
 
-              {!item.child && !item.isHeader && (
+              {/* {!item.child && !item.isHeader && (
                 <SingleMenuItem
                   item={item}
                   collapsed={collapsed}
                   hovered={hovered}
                   trans={trans}
                 />
-              )}
+              )} */}
 
               {/* menu label */}
-              {item.isHeader && !item.child && (!collapsed || hovered) && (
+              {/* {item.isHeader && !item.child && (!collapsed || hovered) && (
                 <MenuLabel item={item} trans={trans} />
-              )}
+              )} */}
 
               {/* sub menu */}
-              {item.child && (
+              {/* {item.child && (
                 <>
                   <SubMenuHandler
                     item={item}
@@ -142,15 +142,15 @@ const ClassicSidebar = ({ trans }: { trans: string }) => {
                     />
                   )}
                 </>
-              )}
+              )} */}
             </li>
           ))}
         </ul>
-        {!collapsed && (
+        {/* {!collapsed && (
           <div className="-mx-2 ">
             <AddBlock />
           </div>
-        )}
+        )} */}
       </ScrollArea>
     </div>
   );

@@ -5,6 +5,9 @@ export { default as SemiBoxSvg } from "./layout/semibox.svg";
 //  dual tone icon
 
 export { default as DSearch } from "./duel-tone/dsearch.svg";
+export { default as QA } from "./duel-tone/qa.svg";
+export { default as Review } from "./duel-tone/review.svg";
+export { default as Membership } from "./duel-tone/membership.svg";
 export { default as Session } from "./home/session.svg";
 export { default as Eye } from "./home/eye.svg";
 export { default as Increase } from "./home/increase.svg";
